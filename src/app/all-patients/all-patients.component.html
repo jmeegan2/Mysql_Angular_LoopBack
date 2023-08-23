@@ -1,6 +1,20 @@
-<ul class="patients">
-    <li *ngFor="let patient of patients">
-      <span class="badge">{{ patient.firstName }} {{ patient.lastName }}</span> - DOB: {{ patient.DOB }} | Sex: {{ patient.sex }}
-    </li>
-  </ul>
-  
+<table class="patients">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Date of Birth</th>
+      <th>Sex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let patient of patients">
+      <td>{{ patient.idPatient }}</td>
+      <td>{{ patient.firstName }}</td>
+      <td>{{ patient.lastName }}</td>
+      <td>{{ patient.DOB }}</td>
+      <td>{{ patient.sex }}</td>
+    </tr>
+  </tbody>
+</table>
