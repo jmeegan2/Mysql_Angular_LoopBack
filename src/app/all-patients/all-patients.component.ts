@@ -5,7 +5,7 @@ import { PatientControllerService } from '../api/services/patient-controller.ser
 @Component({
   selector: 'app-all-patients',
   templateUrl: './all-patients.component.html',
-  styleUrls: ['./all-patients.component.css']
+  styleUrls: ['./all-patients.component.scss']
 })
 export class AllPatientsComponent implements OnInit {
 
